@@ -1,7 +1,7 @@
 {
 	"name": "multicast-channel",
 	"description": "A simple communication channel using UDP multicast.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"main": "index.js",
 	"files": [
 		"index.js"

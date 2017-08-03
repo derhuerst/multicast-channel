@@ -22,7 +22,7 @@ npm install multicast-channel
 ```js
 const createChannel = require('multicast-channel')
 
-const channel = createChannel()
+const channel = createChannel({name: 'derhuerst'})
 
 channel.on('error', console.error)
 channel.on('message', (msg, from) => {
@@ -33,6 +33,19 @@ channel.on('open', () => {
 	channel.send({hello: 'friends!'})
 })
 ```
+
+
+## API
+
+```js
+createChannel([opt])
+```
+
+`opt` may have the following keys:
+
+- `name`: The user name to send messages with.
+- `pack(content, from)`: Pack a message into a [`Buffer`](https://nodejs.org/api/buffer.html).
+- `unpack(buf)`: Unpack a message from a [`Buffer`](https://nodejs.org/api/buffer.html). Should return an object with `content` and `from`.
 
 
 ## Contributing

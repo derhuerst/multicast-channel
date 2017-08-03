@@ -31,7 +31,7 @@ const createChannel = (opt = {}) => {
 	opt = Object.assign({}, defaults, opt)
 
 	const channel = new EventEmitter()
-	const id = channel.id = randomString(8)
+	const id = channel.id = opt.name || randomString(8)
 	let me = {address: GROUP, port: PORT}
 
 	const onError = (err) => {
