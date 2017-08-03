@@ -22,5 +22,6 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"crypto-random-string": "^1.0.0"
 	}
 }
