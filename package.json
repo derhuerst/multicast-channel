@@ -1,0 +1,26 @@
+{
+	"name": "multicast-channel",
+	"description": "A simple communication channel using UDP multicast.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"udp",
+		"multicast",
+		"zeroconf",
+		"ip",
+		"gossip"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/multicast-channel",
+	"repository": "derhuerst/multicast-channel",
+	"bugs": "https://github.com/derhuerst/multicast-channel/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	}
+}
